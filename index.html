@@ -1,90 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#fff8fc" />
-    <title>Marian Ramos | Personal Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="navigation" aria-label="Main navigation">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marian Personal Website</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="portfolio">
+
+    <!-- NAVIGATION -->
+    <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#achievements">Achievement</a>
+        <a href="#achievement">Achievement</a>
         <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    </nav>
 
-    <main class="portfolio">
-      <section class="welcome section-row" id="home" aria-labelledby="welcome-title">
-        <div class="monogram" aria-label="Marian Ramos monogram">MR</div>
-        <div class="welcome-copy">
-          <h1 id="welcome-title">Welcome to my Personal Website</h1>
-          <p>Hello! I’m a student from Polytechnic College of Botolan. I believe in hard work and continuous learning.</p>
-        </div>
-      </section>
+    <!-- HOME SECTION -->
+    <section class="hero" id="home">
 
-      <section class="about section-row" id="about" aria-labelledby="about-title">
-        <div class="about-copy">
-          <h2 id="about-title">About me</h2>
-          <p>I’m Marian V. Ramos, 21 years old, from San Juan, Botolan, Zambales. I believe that education is the key to opening many opportunities in the future. My main goals are to finish my studies and make my family proud.</p>
+        <div class="logo">
+            <span> M </span>
         </div>
-        <div class="portrait" role="img" aria-label="Portrait illustration of Marian">
-          <div class="portrait-hair"></div>
-          <div class="portrait-face"><span></span><span></span><i></i></div>
-          <div class="portrait-shirt"><b></b></div>
-        </div>
-      </section>
 
-      <section class="achievements" id="achievements" aria-labelledby="achievements-title">
-        <h2 id="achievements-title">My achievements</h2>
-        <div class="certificate-grid">
-          <article class="certificate-card">
-            <div class="certificate certificate-academic" role="img" aria-label="Illustration of an academic achiever award certificate">
-              <div class="cert-top"><span class="seal">★</span><span>POLYTECHNIC COLLEGE OF BOTOLAN</span></div>
-              <div class="cert-rule"></div>
-              <p class="cert-small">ACADEMIC ACHIEVER AWARD</p>
-              <p class="cert-name">Marian V. Ramos</p>
-              <p class="cert-small">In recognition of outstanding academic achievement</p>
-              <div class="cert-medal">★</div>
+        <div class="welcome">
+            <h3>“ Welcome to my Personal Website”</h3>
+
+            <p>
+                Hello! I'm a student from Polytechnic College of Botolan.
+                I believe in hardwork,continuous learning.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+
+        <div class="about-text">
+            <h2>“ABOUT ME”</h2>
+
+            <p>
+                I'm Marian V. Ramos 21 yrs old from Sanjuan
+                Botolan Zambales.I believe that education is
+                the key to opening many opportunities in the
+                future.My main goals is to finish my studies
+                make family proud.
+            </p>
+        </div>
+
+        <img src="assets/portrait.jpg" alt="My Picture">
+
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="achievement" id="achievement">
+
+        <h2>MY ACHIEVEMENTS:</h2>
+
+        <div class="certificates">
+
+            <div class="certificate">
+                <img src="assets/certificate-1.jpg" alt="Certificate 1">
+
+                <h3>CERTIFICATE 1:</h3>
+
+                <p>
+                    Academic Achiever award, Polytechnic
+                    College of Botolan awarded for achieving
+                    a general average of 87 during the 1st
+                    Semester, S.Y. 2021-2022.
+                </p>
             </div>
-            <h3>Certificate 1</h3>
-            <p>Academic Achiever award, Polytechnic College of Botolan. Awarded for achieving a general average of 87 during the 1st Semester, S.Y. 2021–2022.</p>
-          </article>
-          <article class="certificate-card">
-            <div class="certificate certificate-recognition" role="img" aria-label="Illustration of a certificate of recognition">
-              <div class="cert-top"><span class="seal blue-seal">✦</span><span>DEPARTMENT OF EDUCATION</span></div>
-              <div class="cert-rule"></div>
-              <p class="cert-small">CERTIFICATE OF RECOGNITION</p>
-              <p class="cert-name">Marian V. Ramos</p>
-              <p class="cert-small">For outstanding academic achievement</p>
-              <div class="cert-signatures"><span>School Head</span><span>Adviser</span></div>
-            </div>
-            <h3>Certificate 2</h3>
-            <p>Certificate of Recognition, New Taugtog National High School. Grade 8 Diamond general average of 88.13, S.Y. 2017–2018.</p>
-          </article>
-        </div>
-      </section>
 
-      <section class="contact" id="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title">Contact us</h2>
-        <div class="contact-layout">
-          <div class="contact-details">
-            <div class="contact-item"><span class="contact-icon phone-icon" aria-hidden="true">☎</span><p><strong>Contact no.</strong><br />06934703827</p></div>
-            <div class="contact-item"><span class="contact-icon mail-icon" aria-hidden="true">✉</span><p><strong>Email add.</strong><br /><a href="mailto:ramosmarian010405@gmail.com">ramosmarian010405<br />@gmail.com</a></p></div>
-            <div class="contact-item"><span class="contact-icon facebook-icon" aria-hidden="true">f</span><p><strong>Facebook</strong><br />Marian Ramos</p></div>
-          </div>
-          <form class="contact-form" id="contact-form">
-            <label><span>Name:</span><input type="text" name="name" placeholder="Your name" required /></label>
-            <label><span>Email Address:</span><input type="email" name="email" placeholder="you@example.com" required /></label>
-            <label><span>Message:</span><textarea name="message" rows="3" placeholder="Write your message..." required></textarea></label>
-            <button type="submit">Send</button>
-            <p class="form-note" id="form-note" aria-live="polite"></p>
-          </form>
+            <div class="certificate">
+                <img src="assets/certificate-2.jpg" alt="Certificate 2">
+
+                <h3>CERTIFICATE 2:</h3>
+
+                <p>
+                    Certificate of Recognition, New Taug tog
+                    National High School achiever award -
+                    Grade 8 Diamond general average of 88.13
+                    S.Y. 2017-2018.
+                </p>
+            </div>
+
         </div>
-      </section>
-      <footer>Thanks for visiting my little corner of the web.</footer>
-    </main>
-    <script src="script.js"></script>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+
+        <h2>CONTACT US:</h2>
+
+        <div class="contact-container">
+
+            <div class="contact-details">
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-user-group green"></i>
+
+                    <p>
+                        <b>CONTACT NO.</b>
+                        <br>09934793927
+                    </p>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope red"></i>
+
+                    <p>
+                        <b>EMAIL ADD:</b>
+                        <br>ramosmarian010405@gmail.com
+                    </p>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-brands fa-facebook blue"></i>
+
+                    <p>
+                        <b>FACEBOOK:</b>
+                        <br>Marian Ramos
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- CONTACT FORM -->
+            <form id="contactForm">
+
+                <input type="text" placeholder="Name:" required>
+
+                <input type="email" placeholder="Email Address:" required>
+
+                <textarea placeholder="Message:" required></textarea>
+
+                <button type="submit">Send</button>
+
+                <p id="feedback"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
