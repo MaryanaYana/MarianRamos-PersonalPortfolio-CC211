@@ -1,8 +1,18 @@
-const contactForm = document.getElementById('contact-form');
-const formNote = document.getElementById('form-note');
+const contactForm = document.getElementById("contactForm");
 
-contactForm.addEventListener('submit', (event) => {
-  event.preventDefault();
-  formNote.textContent = 'Thanks for your message! This demo form is ready to connect to an email service.';
-  contactForm.reset();
+const feedback = document.getElementById("feedback");
+
+contactForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    if (!contactForm.checkValidity()) {
+        contactForm.reportValidity();
+        return;
+    }
+
+    feedback.textContent = "Thank you! Your message is ready.";
+
+    contactForm.reset();
+
 });
